@@ -9,6 +9,9 @@ const ProductList = () => {
    
 
   console.log(product);
+
+
+ 
   
     
 

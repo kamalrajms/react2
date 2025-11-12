@@ -1,0 +1,26 @@
+useState
+useEffect
+useFetch
+useCallback
+useNavigate
+useParam
+useContact
+
+
+
+
+commend to connect  with JSON server
+
+json-server--watch ab.json--port4000
+
+
+## useRef
+
+    UseRef(),is a react hook that gives you a box  (.current) youcan store anything in 
+    Like number, str, obj, function, even DOM elements
+
+    That value Persists between renders.
+    
+    Updating it does not causes your component to re-renders
+
+    {current:value}

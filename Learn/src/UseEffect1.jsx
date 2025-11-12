@@ -1,39 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
+import UseRef from "./UseRef";
 
 const UseEffect1 = () => {
+  let [count, setCount] = useState(0);
+  let [count1, setCount1] = useState(0);
 
-  let [count,setCount] = useState(0)
-  let [count1,setCount1] = useState(0)
-  
-
-   
-  useEffect(()=>{
+  useEffect(() => {
     console.log("this effect will run after every render");
-    
-  })
+  });
 
-
-  useEffect(()=>{
+  useEffect(() => {
     console.log("this effect will run only on intial render");
-    
-  },[])
+  }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log("this effect will run only dependency or that state change");
-    
-  },[count])
-
+  }, [count]);
 
   return (
     <div>
+      <h1>
+        Count - {count} {count1}
+      </h1>
 
-      <h1>Count - {count} {count1}</h1>
+      <button onClick={() => setCount(count + 1)}> Increase</button>
+      <button onClick={() => setCount1(count1 - 1)}> Decrease</button>
 
-      <button onClick={()=>setCount(count+1)}> Increase</button>
-      <button onClick={()=>setCount1(count1-1)}> Decrease</button>
-      
+      <h2>UseRef hook</h2>
+      <UseRef />
     </div>
-  )
-}
+  );
+};
 
-export default UseEffect1
+export default UseEffect1;

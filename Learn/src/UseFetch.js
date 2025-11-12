@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from 'axios'
 
 function useFetch(url){
     let [product,setProduct] = useState([])
@@ -14,12 +15,10 @@ function useFetch(url){
 
             try{
 
-              let response = await  fetch(url)
+              let response = await  axios.get(url)
 
-               if(response.ok){
-                   let data = await response.json()
-                   setProduct(data)
-               }
+               setProduct(response.data)
+               
                
 
             }

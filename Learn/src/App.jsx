@@ -10,6 +10,7 @@ import ProductDetials from './ProductDetials'
 import Electronices from './Electronices'
 import UseEffect from './UseEffect1'
 import ProductList from './ProductList'
+import ReadAPiData from './ReadAPiData'
 
 
 const App = () => {
@@ -23,10 +24,12 @@ const App = () => {
           <Route path='/sign' element={<SignupPage/>}/>
           <Route path='/use' element={<UseEffect/>}/>
           <Route path='/productList' element={<ProductList/>}/>
+          <Route path='/apiData' element={<ReadAPiData/>}/>
           <Route path='/product' element={<Product/>}>
              <Route index element={<ProductDetials/>}/>
              <Route path="detials" element={<ProductDetials/>}/>
              <Route path="electronics" element={<Electronices/>}/>
+             
           </Route>
         </Routes>
       </Router>
