@@ -24,3 +24,9 @@ json-server--watch ab.json--port4000
     Updating it does not causes your component to re-renders
 
     {current:value}
+
+ ## Useparam()
+
+        useParams is a React Router hook that lets you access dynamic parameters from the URL.
+
+		It’s commonly used when you have routes with dynamic segments like /users/:id or /products/:productId.
