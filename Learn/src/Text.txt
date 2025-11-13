@@ -2,9 +2,13 @@ useState
 useEffect
 useFetch
 useCallback
-useNavigate
+
+useRef
 useParam
 useContact
+useReducer
+useId
+useNavigate
 
 
 
@@ -25,8 +29,20 @@ json-server--watch ab.json--port4000
 
     {current:value}
 
- ## Useparam()
+## Useparam()
 
         useParams is a React Router hook that lets you access dynamic parameters from the URL.
 
 		It’s commonly used when you have routes with dynamic segments like /users/:id or /products/:productId.
+
+## usecontext()
+
+    Passsing data from a parent component down to deeply nested child component
+
+    Normally ,you'd have to pass props manually through each level (called props)
+
+    usecontext lets you  skip all the middle components and share data directly.
+
+            create a context
+            provide a value
+            consume the value

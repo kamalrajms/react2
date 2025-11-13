@@ -11,9 +11,11 @@ import Electronices from './Electronices'
 import UseEffect from './UseEffect1'
 import ProductList from './ProductList'
 import ReadAPiData from './ReadAPiData'
+import BlogDetailes from './BlogDetailes'
 
 
 const App = () => {
+ 
   return (
     <div>
       <Router>
@@ -31,6 +33,7 @@ const App = () => {
              <Route path="electronics" element={<Electronices/>}/>
              
           </Route>
+          <Route path="/blogs/:id" element={<BlogDetailes/>}/>
         </Routes>
       </Router>
     </div>
