@@ -1,7 +1,10 @@
 import React, { useEffect, useState, useContext, createContext } from "react";
 import UseRef from "./UseRef";
+import { useNavigate } from "react-router-dom";
 import UseParamHook from "./UseParamHook";
 import First from "./First";
+import UseReducerHook from "./UseReducerHook";
+import UsereducerForm from "./UsereducerForm";
 
 export const Pass = createContext();
 
@@ -22,8 +25,21 @@ const UseEffect1 = () => {
     console.log("this effect will run only dependency or that state change");
   }, [count]);
 
+  //usenavagate()
+
+  const page = useNavigate();
+
+  useEffect(() => {
+    if (count >= 4) {
+      page("/product");
+    }
+  }, [count]);
+
   return (
     <div>
+      <button onClick={() => page("/product")}>to product page</button>
+      <UsereducerForm />
+      <UseReducerHook />
       <h1>
         Count - {count} {count1}
       </h1>

@@ -12,7 +12,6 @@ useNavigate
 
 
 
-
 commend to connect  with JSON server
 
 json-server--watch ab.json--port4000
@@ -46,3 +45,21 @@ json-server--watch ab.json--port4000
             create a context
             provide a value
             consume the value
+
+## useReducer
+
+    const [state,dispatch(action)]=useReducer(RedcerFunction,intialState)
+
+    state--current state (like useState)
+    dispatch-- a function to tell reducer what to do 
+    RedcerFunction-- the logical that returns a new state
+    intialState-- starting  value
+
+## useNavigate
+
+    useNavigate is used to Navigate from one page to another page in logically..
+
+## useId()
+
+    useId() is a react hook  that create a unique and stable ID for each component instance.
+    
