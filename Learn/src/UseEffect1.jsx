@@ -5,6 +5,9 @@ import UseParamHook from "./UseParamHook";
 import First from "./First";
 import UseReducerHook from "./UseReducerHook";
 import UsereducerForm from "./UsereducerForm";
+import UseIDHook from "./UseIDHook";
+import Mess from "./Message/Mess";
+import Xo from "./Game/Xo";
 
 export const Pass = createContext();
 
@@ -37,6 +40,12 @@ const UseEffect1 = () => {
 
   return (
     <div>
+      <Xo />
+      <Mess />
+      <UseIDHook />
+      <UseIDHook />
+      <UseIDHook />
+      <UseIDHook />
       <button onClick={() => page("/product")}>to product page</button>
       <UsereducerForm />
       <UseReducerHook />

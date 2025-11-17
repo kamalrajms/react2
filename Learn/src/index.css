@@ -1,0 +1,21 @@
+.messApp {
+  width: 100%;
+}
+
+.meaasga {
+  width: 50%;
+  border: 5px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meaasga > textarea,
+.meaasga > input,
+.meaasga > button {
+  width: 80%;
+  padding: 4px 0;
+}
